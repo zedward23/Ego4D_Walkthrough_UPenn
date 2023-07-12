@@ -1,11 +1,14 @@
 package com.example.ego4d_walkthrough_upenn;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class gp_roomscan extends AppCompatActivity {
 
@@ -39,13 +42,13 @@ public class gp_roomscan extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, gp_setup.class);
+        Intent intent = new Intent(this, audio_sync.class);
         startActivity(intent);
         finish();
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, qr_code_sync_video.class);
+        Intent intent = new Intent(this, take_seperator.class);
         startActivity(intent);
         finish();
     }

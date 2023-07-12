@@ -44,7 +44,7 @@ public class Step1 extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Step1.class);
         startActivity(intent);
         finish();
     }
