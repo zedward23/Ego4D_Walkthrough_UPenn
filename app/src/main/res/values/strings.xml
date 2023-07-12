@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ego4D_Walkthrough_UPenn</string>
+    <string name="title_activity_go_pro_roomscan">GoPro_roomscan</string>
 </resources>
