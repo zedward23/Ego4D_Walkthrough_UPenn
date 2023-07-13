@@ -39,13 +39,13 @@ public class gp_setup extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, Step2.class);
+        Intent intent = new Intent(this, gp_roomscan.class);
         startActivity(intent);
         finish();
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, qr_code_sync_video.class);
+        Intent intent = new Intent(this, aria_roomscan.class);
         startActivity(intent);
         finish();
     }

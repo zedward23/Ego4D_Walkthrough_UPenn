@@ -48,7 +48,7 @@ public class take_seperator extends AppCompatActivity {
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, second_video_qr.class);
         startActivity(intent);
         finish();
     }

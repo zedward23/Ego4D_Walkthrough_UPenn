@@ -10,9 +10,7 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class qr_code_sync_video extends AppCompatActivity {
-
-    private VideoView sync_vid;
+public class put_on_helmet extends AppCompatActivity {
 
     private Button back;
     private Button next;
@@ -20,16 +18,7 @@ public class qr_code_sync_video extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qr_code_sync_video);
-
-        sync_vid = (VideoView) findViewById(R.id.videoView);
-        String urlPath = "android.resource://" + getPackageName() + "/" + R.raw.time_sync;
-        Uri uri = Uri.parse(urlPath);
-        sync_vid.setVideoURI(uri);
-
-        MediaController mediaController = new MediaController(this);
-        sync_vid.setMediaController(mediaController);
-        mediaController.setAnchorView(sync_vid);
+        setContentView(R.layout.activity_put_on_helmet);
 
         next = (Button) findViewById(R.id.next);
         back = (Button) findViewById(R.id.back);
@@ -50,18 +39,16 @@ public class qr_code_sync_video extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, record_gp.class);
+        Intent intent = new Intent(this, aria_eye_calibration.class);
         startActivity(intent);
         finish();
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, audio_sync.class);
+        Intent intent = new Intent(this, record_gp.class);
         startActivity(intent);
         finish();
     }

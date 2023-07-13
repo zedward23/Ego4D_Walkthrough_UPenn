@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="42dp"
+        android:layout_marginStart="59dp"
         android:layout_marginTop="497dp"
         android:text="Previous Step"
         tools:layout_editor_absoluteX="137dp"
@@ -41,21 +41,27 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="89dp"
-        android:layout_marginTop="195dp"
-        android:text="Scan Room by Recording with GoPro"
+        android:layout_marginTop="84dp"
+        android:text="Start Recording on all GoPros"
         android:textSize="24sp" />
 
+
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switch5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/next"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="-150dp"
-        android:layout_marginEnd="54dp"
-        android:text="GoPro Room Scan Complete" />
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="-105dp"
+        android:layout_marginEnd="57dp"
+        android:text="GoPro batteries are not in GoPro Complete"
+        android:textSize="20sp"/>
+
+
+
+
 
 
 </RelativeLayout>

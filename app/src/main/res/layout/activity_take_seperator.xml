@@ -14,8 +14,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="603dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="564dp"
         android:text="Previous Step"
         tools:layout_editor_absoluteX="137dp"
         tools:layout_editor_absoluteY="658dp"></Button>
@@ -27,24 +27,35 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="663dp"
+        android:layout_marginStart="247dp"
+        android:layout_marginTop="564dp"
         android:text="Next Step"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="589dp"></Button>
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="357dp"
-        android:layout_height="611dp"
+        android:layout_width="376dp"
+        android:layout_height="519dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginEnd="34dp"
         app:srcCompat="@drawable/take_sep" />
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="473dp"
+        android:text="*Helmet angle  *GoPro 4k, 60W                *PROFILE 15 !  "
+        android:textSize="24sp" />
 
 
 </RelativeLayout>

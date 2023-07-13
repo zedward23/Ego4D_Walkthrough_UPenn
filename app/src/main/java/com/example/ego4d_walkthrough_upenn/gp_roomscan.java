@@ -42,13 +42,13 @@ public class gp_roomscan extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, audio_sync.class);
+        Intent intent = new Intent(this, Step1.class);
         startActivity(intent);
         finish();
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, take_seperator.class);
+        Intent intent = new Intent(this, gp_setup.class);
         startActivity(intent);
         finish();
     }
