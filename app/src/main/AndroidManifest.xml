@@ -19,6 +19,30 @@
             android:name=".gp_set"
             android:exported="false" />
         <activity
+            android:name=".stop_recording_gp_and_aria"
+            android:exported="false" />
+        <activity
+            android:name=".second_audio_sync"
+            android:exported="false" />
+        <activity
+            android:name=".second_video_qr"
+            android:exported="false" />
+        <activity
+            android:name=".record_gp"
+            android:exported="false" />
+        <activity
+            android:name=".put_on_helmet"
+            android:exported="false" />
+        <activity
+            android:name=".aria_eye_calibration"
+            android:exported="false" />
+        <activity
+            android:name=".aria_roomscan"
+            android:exported="false" />
+        <activity
+            android:name=".gp_roomscan"
+            android:exported="false" />
+        <activity
             android:name=".take_seperator"
             android:exported="false" />
         <activity
@@ -26,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".qr_code_sync_video"
-            android:exported="false" />
-        <activity
-            android:name=".Step2"
             android:exported="false" />
         <activity
             android:name=".Step1"

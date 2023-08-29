@@ -1,13 +1,16 @@
 package com.example.ego4d_walkthrough_upenn;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class gp_setup extends AppCompatActivity {
+public class record_gp extends AppCompatActivity {
 
     private Button back;
     private Button next;
@@ -15,7 +18,7 @@ public class gp_setup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gp_setup_qr);
+        setContentView(R.layout.activity_record_gp);
 
         next = (Button) findViewById(R.id.next);
         back = (Button) findViewById(R.id.back);
@@ -39,7 +42,7 @@ public class gp_setup extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, Step2.class);
+        Intent intent = new Intent(this, put_on_helmet.class);
         startActivity(intent);
         finish();
     }

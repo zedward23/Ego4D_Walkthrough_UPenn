@@ -50,7 +50,7 @@ public class Step1 extends AppCompatActivity {
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, Step2.class);
+        Intent intent = new Intent(this, gp_roomscan.class);
         startActivity(intent);
         finish();
     }

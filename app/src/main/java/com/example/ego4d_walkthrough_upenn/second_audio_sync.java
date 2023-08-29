@@ -3,24 +3,22 @@ package com.example.ego4d_walkthrough_upenn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.Toast;
 
-public class Step2 extends AppCompatActivity {
+public class second_audio_sync extends AppCompatActivity {
+    MediaPlayer player;
     private Button back;
     private Button next;
 
-    private TextView instructions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.standard_instruction);
-
-        instructions = (TextView) findViewById(R.id.instructions);
-        instructions.setText("1. Assemble Rail \n 2. Mount Gp05 - EG \n 3. Plug in External Batteries and remove internal batteries");
+        setContentView(R.layout.activity_second_audio_sync);
 
         next = (Button) findViewById(R.id.next);
         back = (Button) findViewById(R.id.back);
@@ -41,19 +39,46 @@ public class Step2 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void play(View v){
+        if (player == null){
+            player = MediaPlayer.create(this, R.raw.audio_sync);
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    stopPlayer();
+                }
+            });
+
+        }
+        player.start();
+    }
 
 
+    public void stopPlayer(){
+        if (player!= null){
+            player.release();
+            player = null;
+            Toast.makeText(this, "Media Player Release", Toast.LENGTH_SHORT);
+        }
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, Step1.class);
+        Intent intent = new Intent(this, second_video_qr.class);
         startActivity(intent);
         finish();
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, gp_set.class);
+        Intent intent = new Intent(this, stop_recording_gp_and_aria.class);
         startActivity(intent);
         finish();
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        stopPlayer();
     }
 }

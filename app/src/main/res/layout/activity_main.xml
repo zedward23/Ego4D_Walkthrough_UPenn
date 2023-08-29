@@ -12,9 +12,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="34dp"
-        android:text="Dancing Setup" />
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="44dp"
+        android:text="General Setup"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
@@ -23,20 +24,21 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="147dp"
-        android:layout_marginTop="644dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="606dp"
         android:text="Next Step"></Button>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="332dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="74dp"
-        android:text="Set up the Tripods according to the image below" />
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="119dp"
+        android:text="Tripods/GoPros need to be set up in E,G,O,4D, EG, 'duck tape' order"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,52 +49,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="-56dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-22dp"
         app:srcCompat="@drawable/dance_layout" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="185dp"
-        android:text="E - GP01 (Back Left)" />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginBottom="151dp"
-        android:text="G - GP02 (Front Left)" />
-
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="196dp"
-        android:layout_marginBottom="186dp"
-        android:text="O - GP03 (Front Right)" />
-
-    <Switch
-        android:id="@+id/switch4"
-        android:layout_width="194dp"
-        android:layout_height="24dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="216dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="155dp"
-        android:text="4D - GP04 (Back Right)" />
 
 </RelativeLayout>

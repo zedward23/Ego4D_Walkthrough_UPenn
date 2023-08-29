@@ -55,7 +55,7 @@ public class qr_code_sync_video extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, gp_set.class);
+        Intent intent = new Intent(this, record_gp.class);
         startActivity(intent);
         finish();
     }

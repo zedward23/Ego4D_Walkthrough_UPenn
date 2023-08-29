@@ -2,10 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".qr_code_sync_video">
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="286dp"
+        android:layout_height="544dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
 
     <Button
         android:id="@+id/back"
@@ -14,8 +30,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="558dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="607dp"
         android:text="Previous Step"
         tools:layout_editor_absoluteX="137dp"
         tools:layout_editor_absoluteY="658dp"></Button>
@@ -27,24 +43,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="231dp"
-        android:layout_marginTop="559dp"
+        android:layout_marginStart="247dp"
+        android:layout_marginTop="606dp"
         android:text="Next Step"
         tools:layout_editor_absoluteX="150dp"
         tools:layout_editor_absoluteY="589dp"></Button>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="-109dp"
-        android:layout_marginEnd="4dp"
-        app:srcCompat="@drawable/gpset" />
 
     <TextView
         android:layout_width="294dp"
@@ -52,11 +55,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="463dp"
-        android:text="*Check GoPro voice control is off            *If GoPro turns off, show QR code again"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="435dp"
+        android:text="*Take seperator after last take                                 *Show Video QR Code to all GoPros and Aria glasses"
         android:textSize="24sp" />
-
 
 </RelativeLayout>
 
