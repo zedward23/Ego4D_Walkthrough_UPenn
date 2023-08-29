@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class gp_setup extends AppCompatActivity {
+public class gp_set extends AppCompatActivity {
 
     private Button back;
     private Button next;
@@ -15,7 +15,7 @@ public class gp_setup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gp_setup_qr);
+        setContentView(R.layout.activity_gp_set);
 
         next = (Button) findViewById(R.id.next);
         back = (Button) findViewById(R.id.back);

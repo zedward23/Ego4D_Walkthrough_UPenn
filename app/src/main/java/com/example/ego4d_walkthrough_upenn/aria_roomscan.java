@@ -42,7 +42,7 @@ public class aria_roomscan extends AppCompatActivity {
     }
 
     public void previous_page(){
-        Intent intent = new Intent(this, gp_setup.class);
+        Intent intent = new Intent(this, gp_set.class);
         startActivity(intent);
         finish();
     }

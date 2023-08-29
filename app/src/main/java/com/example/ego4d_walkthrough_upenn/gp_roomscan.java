@@ -48,7 +48,7 @@ public class gp_roomscan extends AppCompatActivity {
     }
 
     public void next_page(){
-        Intent intent = new Intent(this, gp_setup.class);
+        Intent intent = new Intent(this, gp_set.class);
         startActivity(intent);
         finish();
     }

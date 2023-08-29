@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Ego4D_Walkthrough_UPenn"
         tools:targetApi="31">
         <activity
+            android:name=".gp_set"
+            android:exported="false" />
+        <activity
             android:name=".stop_recording_gp_and_aria"
             android:exported="false" />
         <activity
